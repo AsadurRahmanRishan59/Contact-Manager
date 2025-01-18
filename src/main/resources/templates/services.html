@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" th:replace="~{base :: parent(~{::#content}, ~{::title}, ~{::script})}" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+    <title>Services Page</title>
 </head>
 <body>
-    
+    <div id="content">
+        <h1>Our Services</h1>
+    </div>
+
+    <script>
+        console.log("Services Page");
+    </script>
+    <script>
+        console.log("Services Page2");
+    </script>
 </body>
 </html>
