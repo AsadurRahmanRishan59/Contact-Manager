@@ -1,18 +1,93 @@
 <!DOCTYPE html>
-<html lang="en" th:replace="~{base :: parent(~{::#content}, ~{::title}, ~{::script})}" xmlns:th="http://www.thymeleaf.org">
-<head>
+<html
+  lang="en"
+  th:replace="~{base :: parent(~{::#content}, ~{::title}, ~{::script})}"
+  xmlns:th="http://www.thymeleaf.org"
+>
+  <head>
     <title>Signup Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="content">
-        <h1>Signup</h1>
+      <h1>Signup</h1>
+      <div class="flex flex-row gap-2 justify-center">
+        <div class="basis-full sm:basis-3/4 md:basis-2/4 xl:basis-2/6">
+          <div
+            class="block w-full p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+          >
+            <h5
+              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            >
+              Signup Here
+            </h5>
+            <p class="font-normal text-gray-700 dark:text-gray-400"></p>
+            <div class="mb-3">
+              <label
+                for="name"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="text"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Enter here"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label
+                for="email"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="name@example.com"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label
+                for="password"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >Your password</label
+              >
+              <input
+                type="password"
+                id="password"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder=""
+                required
+              />
+            </div>
+            <div class="mb-3">
+                <label
+                  for="phone"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >Phone</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="name@example.com"
+                  required
+                />
+              </div>
+              
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
-        console.log("Signup Page");
+      console.log("Signup Page");
     </script>
     <script>
-        console.log("Signup Page2");
+      console.log("Signup Page2");
     </script>
-</body>
+  </body>
 </html>
